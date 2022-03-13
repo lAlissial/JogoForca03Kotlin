@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         this.banco = Banco()
         this.jogo = JogoForca03(this.banco.palavra(),this.banco.dica())
+        this.jogo.iniciar()
 
         this.tvLayout = findViewById(R.id.tvLayout)
         this.tvDica = findViewById(R.id.tvDica)
