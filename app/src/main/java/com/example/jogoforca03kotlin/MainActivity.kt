@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         this.tvLayout = findViewById(R.id.tvLayout)
         this.tvDica = findViewById(R.id.tvDica)
 
-        this.tvLayout.text = this.jogo.getPalavra()
+        this.tvLayout.text = this.jogo.getPalavra().toList().toString().replace("[","").replace("]","").replace(",", " ")
         this.tvDica.text= this.jogo.getDica()
 
 
