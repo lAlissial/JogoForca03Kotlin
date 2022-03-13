@@ -27,8 +27,8 @@ class JogoForca03 (palavra_a_ser_usada: String, dica_da_palavra_a_ser_usada: Str
     }
 
     @Throws(Exception::class)
-    fun adivinhou(letra: String): Boolean {
-        var letra = letra.uppercase()
+    fun adivinhou(letr: String): Boolean {
+        var letra = letr.uppercase()
         var padraozito = "[A-Z]".toRegex()
 
         if (!padraozito.matches(letra)) {
@@ -43,7 +43,7 @@ class JogoForca03 (palavra_a_ser_usada: String, dica_da_palavra_a_ser_usada: Str
         if (this.guarda_letras_erradas.toString().contains(letra)) {
             throw Exception("Letra já foi escrita anteriormente")
         }
-        if (this.palavra!!.contains(letra)) {
+        if (this.palavra.contains(letra)) {
             for (k in 0 until this.aux_palavra!!.length) {
                 if (letra == this.aux_palavra!!.substring(k, k + 1)) {
                     this.acertos++
