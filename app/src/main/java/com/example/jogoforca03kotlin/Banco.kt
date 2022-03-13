@@ -5,7 +5,8 @@ class Banco {
     var guarda_resu_sorteio: String = String()
 
     init{
-
+        this.preparaDicionario()
+        this.sorteia()
     }
 
     private fun preparaDicionario(){
