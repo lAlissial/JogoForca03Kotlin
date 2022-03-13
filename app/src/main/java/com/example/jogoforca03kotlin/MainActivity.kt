@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvDica:TextView
     private lateinit var banco: Banco
     private lateinit var jogo: JogoForca03
-s
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
